@@ -46,11 +46,13 @@ namespace FitxerHash
                         fileName = Console.ReadLine();
                         textPla = LlegirFitxer(fileName);
                         if (string.IsNullOrEmpty(textPla)) break;
+                        string path = Path.GetDirectoryName(fileName) + Path.DirectorySeparatorChar;
                         hash = CalculaHash(textPla);
                         if (string.IsNullOrEmpty(hash)) break;
-                        Console.Write("Entra nom pel fitxer de hash: ");
+                        Console.Write("Entra nom pel fitxer de hash (es guardarà a la mateixa ruta que el fitxer de text): ");
                         fileHash = Console.ReadLine();
-                        EscriuFitxer(fileHash, hash);
+
+                        EscriuFitxer(path+fileHash, hash);
                         break;
 
                     // Comaparar hash arxiu amb l'arxiu guardat   
