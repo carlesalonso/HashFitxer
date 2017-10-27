@@ -49,7 +49,7 @@ namespace FitxerHash
                         string path = Path.GetDirectoryName(fileName) + Path.DirectorySeparatorChar;
                         hash = CalculaHash(textPla);
                         if (string.IsNullOrEmpty(hash)) break;
-                        Console.Write("Entra nom pel fitxer de hash (es guardarà a la mateixa ruta que el fitxer de text): ");
+                        Console.Write("Entra nom pel fitxer de Hash (es guardarà a la mateixa ruta que el fitxer de text): ");
                         fileHash = Console.ReadLine();
 
                         EscriuFitxer(path+fileHash, hash);
