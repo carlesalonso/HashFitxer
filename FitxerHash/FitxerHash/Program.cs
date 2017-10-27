@@ -73,7 +73,7 @@ namespace FitxerHash
                         if (textHash.Equals(hash))
                             Console.WriteLine("Els hashs coincideixen");
                         else
-                            Console.WriteLine("Els hashs no coincideixen");
+                            Console.WriteLine("Els Hashs no coincideixen");
 
                         Console.ReadKey(true);
                         break;
